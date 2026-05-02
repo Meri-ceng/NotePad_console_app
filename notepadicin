@@ -1,0 +1,77 @@
+cd ~/notepad
+
+
+cd Desktop
+cd notepad
+g++ -std=c++17 notePad1.cpp -o editor -lncurses
+./editor
+
+
+cd notepad
+g++ notePad1.cpp -o editor
+./editor
+
+
+cd notepad
+g++ notePad1.cpp -o main.exe
+./main.exe
+
+
+
+
+linux sorunları----------------------------------------------------------------------------
+
+Linux terminalinde CTRL+Z kombinasyonu varsayılan olarak programı sonlandırmaz, ancak işletim sistemi düzeyinde programı "askıya alır" (suspend) ve arka plana atar. Senin terminalinde gördüğün [1]+ Stopped ./editor mesajı tam olarak budur. Program aslında kapanmadı, sadece işletim sistemi senin CTRL+Z tuşuna bastığını görünce "bu programı durdur ve arka plana at" sinyali (SIGSTP) gönderdi.
+
+Proje dokümanında istenen Geri Al (Undo) işlevini CTRL+Z ile yapabilmek için terminalin bu sinyali yakalamasını engellememiz veya program içinde bu karakter kodunu doğru yönetmemiz gerekir.
+
+hello
+bu yazdıklarım sonradan ekleniyor 
+
+
+
+
+
+geri al ama çok iyi ctrl z yani
+
+
+
+dosya gezgininde ileri geri hareket
+dosyalar içinde yukarı aşağı hareket yani
+enter la da açmak lazım
+
+
+
+
+ctrl G kelimeler içinde gezme ilk ikisinde sıkıntı yok üçünde patlıyor 
+
+
+
+
+
+ctrl w daki görevi 
+Silme İşlemleri
+● CTRL + Backspace → Kelime bazlı silme
+● Normal Backspace → Karakter silme
+bunu ctrl r ye al
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
